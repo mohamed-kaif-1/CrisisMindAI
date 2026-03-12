@@ -43,21 +43,24 @@ export default function GlobalRisk() {
           <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: '#7C3AED' }} />
         </div>
       </div>
-
-      {/* SVG world map silhouette */}
-      <div className="relative mx-4 mb-3">
-        <svg
-          viewBox="0 0 680 360"
-          className="w-full"
-          style={{ filter: 'drop-shadow(0 0 12px rgba(124,58,237,0.15))' }}
-        >
-          {/* Simplified world outline paths */}
-          <path
-            d="M85,130 Q110,108 140,112 L158,105 Q175,95 195,100 L215,95 Q240,88 255,98 L262,95 Q278,88 290,96 L295,92 Q310,85 320,98 L328,92 Q344,82 358,98 L366,90 Q382,80 394,94 L400,88 Q418,76 432,90 L454,80 Q480,68 504,84 L528,75 Q556,60 576,78 L598,66 Q622,52 636,70 L648,75 Q662,80 668,90 L670,120 Q672,145 665,160 L660,180 Q655,200 648,210 L638,225 Q625,240 610,238 L595,245 Q578,252 562,248 L545,255 Q526,262 510,255 L490,260 Q472,268 455,260 L440,268 Q422,278 405,268 L390,278 Q370,290 355,280 L338,292 Q318,305 300,292 L282,305 Q258,320 238,305 L218,318 Q192,334 172,318 L154,325 Q130,340 110,322 L90,318 Q70,314 58,298 L46,278 Q40,255 48,238 L42,218 Q34,194 45,178 L40,160 Q32,138 46,125 L62,115 Q74,108 85,130Z"
-            fill="rgba(255,255,255,0.04)"
-            stroke="rgba(255,255,255,0.08)"
-            strokeWidth="0.8"
-          />
+{/* SVG world map silhouette */}
+<div className="relative mx-4 mb-3">
+  <svg
+    viewBox="0 0 680 360"
+    className="w-full"
+    style={{ filter: 'drop-shadow(0 0 12px rgba(124,58,237,0.15))' }}
+  >
+    {/* World map silhouette */}
+    <motion.path
+      d="M88 154l26-10 32-14 36-6 48 8 30-10 34 6 20-16 34 10 24-12 34 8 18-10 26 12 28-8 20 14 26 8 16 16-8 20-24 10-22 18-28 6-26 12-30 6-24 14-28 6-34-10-30 10-36-6-34 12-28-8-22 6-20-12-12-18 6-20-10-14 6-18z"
+      fill="rgba(255,255,255,0.05)"
+      stroke="rgba(124,58,237,0.35)"
+      strokeWidth="1"
+      initial={{ pathLength: 0 }}
+      whileInView={{ pathLength: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 2 }}
+    />
           {/* Additional landmass blobs for realism */}
           <ellipse cx="345" cy="200" rx="58" ry="72" fill="rgba(255,255,255,0.035)" stroke="rgba(255,255,255,0.06)" strokeWidth="0.8" />
           <ellipse cx="490" cy="145" rx="95" ry="60" fill="rgba(255,255,255,0.035)" stroke="rgba(255,255,255,0.06)" strokeWidth="0.8" />

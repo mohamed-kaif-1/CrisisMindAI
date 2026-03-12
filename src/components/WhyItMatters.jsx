@@ -7,24 +7,6 @@ const FACTS = [
   { stat: '8.3x', label: 'Faster response deployment when AI-driven alerts are active.', color: '#00E5A0' },
 ];
 
-const CARDS = [
-  {
-    icon: '🌍',
-    title: 'Too Much Data, Too Little Context',
-    body: 'Relief agencies drown in fragmented signals — seismic feeds, social posts, satellite frames — with no unified layer to connect them. Critical patterns go unseen.',
-  },
-  {
-    icon: '⏱️',
-    title: 'Response Windows Measured in Hours',
-    body: 'Every minute of delayed detection compounds casualties, displacement, and costs. Traditional systems alert responders after the window to act has often already closed.',
-  },
-  {
-    icon: '🧩',
-    title: 'No Multimodal Understanding',
-    body: "Existing tools are siloed: text only, or image only. Gemini's multimodal reasoning lets SENTINEL cross-correlate image, audio, text, and sensor data simultaneously.",
-  },
-];
-
 export default function WhyItMatters() {
   return (
     <section id="overview" className="relative py-28 px-6 md:px-10 max-w-7xl mx-auto">
@@ -97,27 +79,6 @@ export default function WhyItMatters() {
             </span>
             <p className="text-[11px] leading-relaxed font-medium" style={{ color: 'rgba(241,245,249,0.4)' }}>
               {f.label}
-            </p>
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Problem cards */}
-      <div className="grid md:grid-cols-3 gap-5">
-        {CARDS.map((c, i) => (
-          <motion.div
-            key={c.title}
-            className="card-base p-7"
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.12, duration: 0.65, ease: [0.22,1,0.36,1] }}
-            whileHover={{ scale: 1.02 }}
-          >
-            <span className="text-3xl mb-4 block">{c.icon}</span>
-            <h3 className="text-[16px] font-bold text-white/88 mb-2.5 leading-snug">{c.title}</h3>
-            <p className="text-[12.5px] leading-[1.8] font-medium" style={{ color: 'rgba(241,245,249,0.43)' }}>
-              {c.body}
             </p>
           </motion.div>
         ))}
