@@ -7,8 +7,6 @@ const FACTS = [
   { stat: '8.3x', label: 'Faster response deployment when AI-driven alerts are active.', color: '#00E5A0' },
 ];
 
-<<<<<<< HEAD
-=======
 const CARDS = [
   {
     icon: '🌍',
@@ -27,7 +25,6 @@ const CARDS = [
   },
 ];
 
->>>>>>> 0d396725639e6134e2358a72abe76c0db7ca3dc3
 export default function WhyItMatters() {
   return (
     <section id="overview" className="relative py-28 px-6 md:px-10 max-w-7xl mx-auto">
@@ -104,8 +101,6 @@ export default function WhyItMatters() {
           </motion.div>
         ))}
       </div>
-<<<<<<< HEAD
-=======
 
       {/* Problem cards */}
       <div className="grid md:grid-cols-3 gap-5">
@@ -127,7 +122,6 @@ export default function WhyItMatters() {
           </motion.div>
         ))}
       </div>
->>>>>>> 0d396725639e6134e2358a72abe76c0db7ca3dc3
     </section>
   );
 }

@@ -43,26 +43,6 @@ export default function GlobalRisk() {
           <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: '#7C3AED' }} />
         </div>
       </div>
-<<<<<<< HEAD
-{/* SVG world map silhouette */}
-<div className="relative mx-4 mb-3">
-  <svg
-    viewBox="0 0 680 360"
-    className="w-full"
-    style={{ filter: 'drop-shadow(0 0 12px rgba(124,58,237,0.15))' }}
-  >
-    {/* World map silhouette */}
-    <motion.path
-      d="M88 154l26-10 32-14 36-6 48 8 30-10 34 6 20-16 34 10 24-12 34 8 18-10 26 12 28-8 20 14 26 8 16 16-8 20-24 10-22 18-28 6-26 12-30 6-24 14-28 6-34-10-30 10-36-6-34 12-28-8-22 6-20-12-12-18 6-20-10-14 6-18z"
-      fill="rgba(255,255,255,0.05)"
-      stroke="rgba(124,58,237,0.35)"
-      strokeWidth="1"
-      initial={{ pathLength: 0 }}
-      whileInView={{ pathLength: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 2 }}
-    />
-=======
 
       {/* SVG world map silhouette */}
       <div className="relative mx-4 mb-3">
@@ -78,7 +58,6 @@ export default function GlobalRisk() {
             stroke="rgba(255,255,255,0.08)"
             strokeWidth="0.8"
           />
->>>>>>> 0d396725639e6134e2358a72abe76c0db7ca3dc3
           {/* Additional landmass blobs for realism */}
           <ellipse cx="345" cy="200" rx="58" ry="72" fill="rgba(255,255,255,0.035)" stroke="rgba(255,255,255,0.06)" strokeWidth="0.8" />
           <ellipse cx="490" cy="145" rx="95" ry="60" fill="rgba(255,255,255,0.035)" stroke="rgba(255,255,255,0.06)" strokeWidth="0.8" />
