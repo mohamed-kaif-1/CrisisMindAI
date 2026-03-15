@@ -8,6 +8,20 @@ const FEATURES = [
 ];
 
 export default function CTASection() {
+  async function runDemo() {
+  const response = await fetch("http://localhost:5000/api/analyze", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      signals: ["I feel overwhelmed and anxious"]
+    })
+  });
+
+  const data = await response.json();
+  console.log(data);
+}
   return (
     <section className="relative py-28 px-6 md:px-10 overflow-hidden">
       {/* Background gradient */}
